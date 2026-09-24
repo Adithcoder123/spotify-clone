@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="left bg-black">
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="logo">
+            <img class="spotifylogo" src="image.png" alt="" />
+          </div>
+          <ul>
+            <li>
+              <img class="invert" src="home.svg" alt="home" />
+              <p>home</p>
+            </li>
+            <li>
+              <img class="invert" src="search.svg" alt="home" />
+              <p>search</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <img class="invert" src="playlist.svg" alt="" />
+            <h1>Your Library</h1>
+          </div>
+          <div class="songlist">
+            <ul>
+              
+            </ul>
+          </div>
+          <footer class="library-footer" aria-label="Library footer">
+            <nav class="footer-links" aria-label="Legal links">
+              <a href="#">Legal</a>
+              <a href="#">Safety &amp; Privacy Center</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Cookies</a>
+              <a href="#">About Ads</a>
+              <a href="#">Accessibility</a>
+            </nav>
+            <a class="cookies-link" href="#">Cookies</a>
+            <button class="language-button" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path
+                  d="M3 12h18M12 3c2.3 2.5 3.5 5.5 3.5 9S14.3 18.5 12 21M12 3C9.7 5.5 8.5 8.5 8.5 12S9.7 18.5 12 21"
+                ></path>
+              </svg>
+              English
+            </button>
+          </footer>
+        </div>
+      </div>
+      <div class="right p-1">
+        <div class="header">
+          <div class="nav">
+            <img class="invert" src="left_arrow.webp" />
+            <img class="invert" src="right_arrow.webp" />
+          </div>
+          <div class="button">
+            <button class="signin-btn m-1">signin</button>
+            <button class="login-btn m-1">login</button>
+          </div>
+        </div>
+        <div class="spotify-playlists">
+          <h1 class="invert">spotify Playlists</h1>
+          <div class="cardcontainer">
+            <div class="card">
+              <img src="song1.jpeg" alt="" />
+              <p>Sourav Verma</p>
+              <h4>Sammi Meri Waar (Acoustic)</h4>
+            </div>
+          </div>
+        </div>
+        <div class="playbar">
+            <span class="songinfo"></span>
+            <div class="seekbar">
+                <div class="circle">
+
+                </div>
+            </div>
+          <div class="songbuttons">
+            <button class="song-skip previous" type="button" aria-label="Previous song">
+              <img src="previoussong.webp" alt="" />
+            </button>
+            <img class="play" src="playbutton.webp" alt="Play" />
+            <button class="song-skip next" type="button" aria-label="Next song">
+              <img src="nextsong.png" alt="" />
+            </button>
+          </div>
+          <div class="songtime"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
